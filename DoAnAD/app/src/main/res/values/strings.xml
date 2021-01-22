@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">QLSV</string>
+    <string name="title_activity_home">Quản lý Sinh viên</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Quản lý Sinh viên</string>
+    <string name="nav_header_subtitle">Đại học công nghệ thông tin đại học quốc gia uit</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+</resources>

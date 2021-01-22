@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ManageSVActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Apptoolbar_Manage"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_Manage"
+            android:background="@color/group_orgin"
+            app:title="Quản lý Sinh viên"
+            app:navigationIcon="@drawable/back"
+            app:titleTextColor="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:padding="10dp"
+        android:id="@+id/layoutBaoAll"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_edittext"
+        android:layout_below="@+id/Apptoolbar_Manage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+
+            android:id="@+id/layoutSpinerClass"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:text="Lớp"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:id="@+id/spinnerClass"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Spinner>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutSpinerClass"
+            android:id="@+id/layoutTenSV"
+            android:padding="10dp"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:text="Tên Sinh viên"
+                android:textSize="20sp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/edtTenSV"
+                android:layout_weight="1"
+                android:background="@drawable/custom_edittext"
+                android:hint="Nhập tên"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutTenSV"
+            android:id="@+id/layoutDate"
+            android:padding="10dp"
+            android:weightSum="2"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="Ngày sinh "
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/edtDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:enabled="true"
+                android:background="@drawable/custom_edittext"
+                android:hint="Chọn ngày"
+                android:inputType="date" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutSpinerClass"
+            android:id="@+id/layoutEmail"
+            android:padding="10dp"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:text="Email"
+                android:textSize="20sp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/edtEmailSv"
+                android:layout_weight="1"
+                android:background="@drawable/custom_edittext"
+                android:hint="Nhập email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutSpinerClass"
+            android:id="@+id/layoutSDT"
+            android:padding="10dp"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:text="SĐT"
+                android:textSize="20sp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/edtSDT"
+                android:layout_weight="1"
+                android:background="@drawable/custom_edittext"
+                android:hint="Nhập sđt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutSpinerClass"
+            android:id="@+id/layoutDiaChi"
+            android:padding="10dp"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:text="Địa chỉ"
+                android:textSize="20sp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/edtDiaChi"
+                android:layout_weight="1"
+                android:background="@drawable/custom_edittext"
+                android:hint="Nhập dia chi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnAddAnhSVManage"
+            android:background="@drawable/custom_button"
+            android:text="Chọn ảnh"
+            android:layout_margin="10dp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/layoutDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnAddSV"
+            android:background="@drawable/custom_button"
+            android:text="Thêm Sinh viên"
+            android:layout_margin="10dp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/layoutDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ImageView
+
+        android:id="@+id/imgAnhSVTam"
+        android:visibility="gone"
+        android:layout_below="@+id/list_SV"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <ProgressBar
+        android:id="@+id/progressbar_manager"
+        android:layout_width="wrap_content"
+        android:indeterminateDrawable="@drawable/custom_progressbar"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

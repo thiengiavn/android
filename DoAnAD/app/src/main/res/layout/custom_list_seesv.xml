@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.example.qlsv.View.ImageHelper
+            android:id="@+id/imgAnhSV"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/user"/>
+
+
+
+        <!--<ImageView-->
+        <!--android:src="@drawable/user"-->
+        <!---->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp" />-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtTensv_SeeSV"
+                android:textSize="25sp"
+                android:textColor="#f00"
+                android:text="Tên SV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txtDatesv_SeeSV"
+                android:textSize="20sp"
+                android:textColor="#155E96"
+                android:text="Lớp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

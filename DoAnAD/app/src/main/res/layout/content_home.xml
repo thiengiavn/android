@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.HomeActivity"
+    tools:showIn="@layout/app_bar_home">
+    <Button
+        android:id="@+id/btnAddClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:drawableLeft="@drawable/add"
+        android:background="@drawable/custom_button"
+        android:text="Thêm lớp"
+        android:padding="10dp"
+        android:layout_margin="5dp"></Button>
+    <Button
+        android:id="@+id/btnSeeClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:drawableLeft="@drawable/eys"
+        android:background="@drawable/custom_button"
+        android:text="Xem danh sách lớp học"
+        android:padding="10dp"
+        android:layout_margin="5dp"></Button>
+
+    <Button
+        android:id="@+id/btnManageClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:drawableLeft="@drawable/user"
+        android:background="@drawable/custom_button"
+        android:text="Thêm sinh viên"
+        android:padding="10dp"
+        android:layout_margin="5dp"></Button>
+
+
+    <Button
+        android:id="@+id/btnSeeListClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:drawableLeft="@drawable/manage"
+        android:background="@drawable/custom_button"
+        android:text="Xem danh sách sinh viên"
+        android:padding="10dp"
+        android:layout_margin="5dp"></Button>
+
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layoutSV"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/txtTenSVDetail"
+            android:textColor="#2196F3"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:text="Tên"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txtNgaySinhSVDetail"
+            android:textColor="#03A9F4"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:text="Tên"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txtTenLopDetail"
+            android:textColor="#2196F3"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+
+            android:text="Tên"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txtSDTSVDetail"
+            android:textColor="#2196F3"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:text="Tên"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txtEmailSVDetail"
+            android:textColor="#2196F3"
+            android:textSize="20sp"
+            android:text="Tên"
+            android:singleLine="true"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+
+            android:id="@+id/txtPlaceSVDetail"
+            android:textColor="#2196F3"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:text="Tên"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <com.example.qlsv.View.ImageHelper
+            android:id="@+id/imgAnhSVdetail"
+            android:layout_below="@+id/Apptoolbar_Detail"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/user"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

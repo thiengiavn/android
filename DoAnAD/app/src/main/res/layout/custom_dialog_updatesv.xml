@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_margin="10dp"
+            android:textSize="24sp"
+            android:textColor="#f00"
+            android:text="Cập nhật Sinh viên"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/edtTenSVUpdate"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/name"
+            android:background="@drawable/custom_edittext"
+            android:hint="Nhập tên"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edtNgaySinhSVUpdate"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_edittext"
+            android:drawableLeft="@drawable/manage"
+            android:hint="Nhập ngày sinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/edtTenlopSVUpdate"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_edittext"
+            android:drawableLeft="@drawable/school"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edtSDTSVUpdate"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_edittext"
+            android:drawableLeft="@drawable/phone"
+            android:hint="Nhập SĐT"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edtEmailSVUpdate"
+            android:layout_margin="10dp"
+            android:hint="Nhập Email"
+            android:background="@drawable/custom_edittext"
+            android:drawableLeft="@drawable/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edtDiaChiSVUpdate"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_edittext"
+            android:drawableLeft="@drawable/marker"
+            android:hint="Nhập địa chỉ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnDialogUpdateSV"
+                android:layout_weight="0.9"
+                android:background="@drawable/custom_button"
+                android:text="Cập nhật"
+                android:padding="10dp"
+                android:textColor="#FFFFFF"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btnDialogHuyUpdateSV"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:text="Hủy"
+                android:padding="10dp"
+                android:textColor="#FFFFFF"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>

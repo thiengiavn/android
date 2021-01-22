@@ -1,0 +1,41 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_SeeSV"
+        android:background="@color/group_orgin"
+        app:title="Danh sách Sinh viên"
+        app:navigationIcon="@drawable/back"
+        app:titleTextColor="#FFFFFF"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <Spinner
+        android:layout_margin="10dp"
+        android:id="@+id/SpinerSeeSV"
+        android:background="@drawable/custom_edittext"
+        android:layout_below="@+id/toolbar_SeeSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Spinner>
+    <ListView
+        android:id="@+id/list_SeeSV"
+        android:background="@drawable/custom_edittext"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/SpinerSeeSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+
+
+
+
+
+
+</RelativeLayout>

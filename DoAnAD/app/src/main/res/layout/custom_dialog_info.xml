@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textStyle="normal"
+        android:background="@drawable/custom_button2"
+        android:textColor="#f00"
+        android:textSize="40sp"
+        android:text="Nguyễn Huỳnh Hồng Thiện Se114.L13.PMCL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

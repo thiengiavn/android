@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SeeClassListActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_SeeClass"
+        android:background="@color/group_orgin"
+        app:title="Danh sách Lớp học"
+        app:navigationIcon="@drawable/back"
+        app:titleTextColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark" >
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#03A9F4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="0.5"
+            android:textSize="30sp"
+            android:text="STT"
+            android:padding="5dp"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_weight="3"
+            android:textSize="30sp"
+            android:text="Mã Lớp"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_weight="3"
+            android:textSize="30sp"
+            android:text="Tên Lớp"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+
+</LinearLayout>

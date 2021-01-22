@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <item-->
+<!--        android:id="@+id/action_choose_color"-->
+<!--        android:icon="@drawable/ic_more_vert_black_24dp"-->
+<!--        app:showAsAction="always|collapseActionView"-->
+<!--        android:title="Choose Color"/>-->
+    <item
+        android:id="@+id/choose_color"
+        android:icon="@drawable/ic_more_vert_black_24dp"
+        android:title="Đổi màu nền">
+
+    </item>
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_more_vert_black_24dp"
+        android:title="Đăng xuất">
+
+    </item>
+</menu>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Chức năng">
+        <menu>
+            <item
+                android:id="@+id/nav_addClass"
+                android:icon="@drawable/add"
+                android:title="Thêm Lớp" />
+            <item
+                android:id="@+id/nav_seeClass"
+                android:icon="@drawable/eys"
+                android:title="Xem danh sách Lớp" />
+            <item
+                android:id="@+id/nav_manageClass"
+                android:icon="@drawable/manage"
+                android:title="Quản lý Sinh viên" />
+
+        </menu>
+    </item>
+
+    <item android:title="Thông tin">
+        <menu>
+            <item
+                android:id="@+id/info_user"
+                android:icon="@drawable/user"
+                android:title="Tài khoản" />
+            <item
+                android:id="@+id/info_tacgia"
+                android:icon="@drawable/user"
+                android:title="Tác giả" />
+        </menu>
+    </item>
+
+</menu>

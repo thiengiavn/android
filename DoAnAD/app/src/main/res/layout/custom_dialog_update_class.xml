@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#ABBBCC">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/add"
+        android:text="Cập nhật"
+        android:textColor="#03A9F4"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imgHuy_dialogAdd_update"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/delete2" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/layoutMalop"
+        android:layout_below="@+id/title"
+        android:orientation="horizontal">
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="Mã Lớp"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/edtMaLop_update"
+            android:hint="Nhập Mã Lớp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/layoutTenLop"
+        android:layout_below="@+id/layoutMalop"
+        android:orientation="horizontal">
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="Tên Lớp"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/edtTenLop_update"
+            android:hint="Nhập Mã Lớp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:weightSum="2"
+        android:layout_below="@+id/layoutTenLop"
+        android:padding="5dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnaddclass_dialog_update"
+            android:drawableLeft="@drawable/add"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textColor="#FFFFFF"
+            android:background="@color/group_orgin"
+            android:padding="7dp"
+            android:text="Cập nhật"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btndelete_dialog_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:padding="7dp"
+            android:background="@color/group_orgin"
+            android:drawableLeft="@drawable/delete"
+            android:text="Xóa Trắng "
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</RelativeLayout>
+
+
